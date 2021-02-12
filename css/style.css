@@ -1,0 +1,212 @@
+/* Variables */
+
+:root {
+  --basic-black: #000000;
+  --basic-extra-dark: #333333;
+  --basic-neutral: #a9a9a9;
+  --basic-extra-light: #f2f2f2;
+  --basic-white: #ffffff;
+  --basic-blue: #81b3d2;
+
+  --special: #766357;
+  }
+
+  /* Global */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--basic-extra-dark);
+  text-transform: uppercase;
+  background-color: var(--basic-white);
+}
+
+a {
+  text-decoration: none;
+}
+
+h3 {
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--basic-black);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container h2 {
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--basic-black)
+}
+.paragraph {
+  font-size: 14px;
+  line-height: 26px;
+}
+.main-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--basic-black);
+  background-color: transparent;
+}
+
+  /* User navigation */
+
+.site-navigation a {
+  color: var(--basic-black);
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+  /* Opportunities */
+
+.opportunities-list {
+  list-style: none;
+}
+
+.opportunities-item {
+  text-align: center;
+}
+
+.opportunities-item h4 {
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--basic-black);
+}
+
+  /* Features */
+
+.features-list {
+  list-style: none;
+}
+
+.features-item {
+  text-align: center;
+}
+
+  /* Appointment */
+
+.button {
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-blue);
+  border: none;
+}
+.button:hover{
+  background-color: #669EC0;
+}
+.button:focus{
+  background-color: #5496BD;
+}
+.button:active {
+  background-color: var(--basic-blue);
+}
+
+.button.disabled,
+.button:disabled {
+  cursor: default;
+  opacity: 0.5;
+  background-color: var(--basic-blue);
+}
+.button-search {
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--special);
+  border: none;
+}
+
+.button-search:hover{
+    background-color:#604E43;
+}
+.button-search:focus{
+    background-color: #503E33;
+}
+.button-search:active {
+    background-color: var(--special);
+}
+
+.appointment h2 {
+  font-size: 30px;
+  line-height: 24px;
+  text-align: center;
+  color: var(--basic-black);
+}
+.appointment-info {
+  line-height: 24px;
+  text-align: center;
+  color: var(--basic-black);
+}
+
+.appointment-item input {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+  background-color: var(--basic-extra-light);
+  border: none;
+}
+.appointment-item input:hover{
+  background-color:#EBEBEB;
+}
+.appointment-item input:focus{
+  background: #FFFFFF;
+  border: 2px solid #E5E5E5;
+}
+.appointment-item input:active {
+  background-color: var(--basic-extra-light);
+}
+  /* Main footer */
+
+.main-footer {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+.footer-contacts a{
+  color: var(--basic-black);
+  text-decoration: none;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+.footer-social {
+  text-align: center;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+  /* Social button */
+
+.social-button {
+  color: var(--basic-white);
+  background-color: var(--basic-blue);
+}
+
+.social-button:hover{
+  background-color: #669EC0;
+}
+.social-button:focus {
+  background-color: #5496BD;
+}
+
+.footer-copyright{
+  font-size: 14px;
+  line-height: 26px;
+}
