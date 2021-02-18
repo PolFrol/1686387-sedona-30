@@ -39,7 +39,7 @@ img {
   height: auto;
 }
 
-.container h2 {
+h2 {
   font-size: 21px;
   line-height: 26px;
   color: var(--basic-black)
@@ -209,4 +209,78 @@ img {
 .footer-copyright{
   font-size: 14px;
   line-height: 26px;
+}
+  /* Catalog */
+table{
+  border-collapse: collapse;
+  border: 2px solid var(--basic-white);
+}
+.evaluation {
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--basic-white);
+}
+.hotel{
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--basic-black);
+}
+.hotel a{
+  list-style: none;
+  text-decoration: none;
+}
+.show {
+  border: 2px solid var(--basic-white);
+  text-transform: uppercase;
+  color: var(--basic-white);
+}
+.show:hover {
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+}
+.more {
+  color: var(--basic-white);
+  background-color: var(--basic-blue);
+  text-transform: uppercase;
+  border: none;
+}
+.more:hover {
+  background-color:#669EC0;
+}
+.more:focus {
+  background-color:#5496BD;
+}
+.booking {
+  color: var(--basic-white);
+  background-color: var(--special);
+  text-transform: uppercase;
+  border: none;
+}
+.booking:hover {
+  background-color:#604E43;
+}
+.booking:focus {
+  background-color:#503E33;
+}
+.rating {
+  background-color: var(--basic-extra-light);
+  color: #666666;
+}
+.sorting {
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--basic-black);
+}
+.sorting-list{
+  font-size: 12px;
+  line-height: 18px;
+  list-style: none;
+}
+.sorting-price {
+  color: var(--basic-blue);
+}
+.sorting-item {
+  color: var(--basic-black);
+  opacity: 0.3;
+  text-decoration: underline;
 }
