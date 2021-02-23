@@ -13,7 +13,7 @@
 
   /* Global */
 
-body {
+.page-body {
   margin: 0;
   padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
@@ -22,6 +22,10 @@ body {
   color: var(--basic-extra-dark);
   text-transform: uppercase;
   background-color: var(--basic-white);
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
 
 a {
@@ -55,19 +59,53 @@ h2 {
   background-color: transparent;
 }
 
-  /* User navigation */
+  /* Grid */
 
+.page {
+  height: 100%;
+}
+.main-navigation{
+  display: grid;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.main-header-logo{
+justify-self: center;
+}
+.main-header {
+  margin-bottom: 56px;
+}
 .site-navigation a {
   color: var(--basic-black);
 }
 
 .site-navigation {
   list-style: none;
+  margin: 0;
+  padding: 40px;
 }
 
+.wrapper {
+  margin-bottom: 50px;
+}
   /* Opportunities */
-
+.opportunities-wrapper {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 50px;
+}
 .opportunities-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 120px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 80px;
   list-style: none;
 }
 
@@ -82,8 +120,20 @@ h2 {
 }
 
   /* Features */
-
+.features-wrapper {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 50px;
+}
 .features-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 150px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 50px;
   list-style: none;
 }
 
@@ -172,12 +222,20 @@ h2 {
   /* Main footer */
 
 .main-footer {
+  padding: 60px 0;
+  margin-top: 35px;
   color: var(--basic-black);
   background-color: var(--basic-white);
   background-position: 0 0;
   background-repeat: repeat;
 }
+.main-footer .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
 .footer-contacts a{
+  margin: 0;
+  width: 250px;
   color: var(--basic-black);
   text-decoration: none;
   font-size: 21px;
@@ -186,6 +244,9 @@ h2 {
 }
 .footer-social {
   text-align: center;
+  width: 150px;
+  justify-self: center;
+
 }
 
 .footer-social ul {
@@ -207,6 +268,8 @@ h2 {
 }
 
 .footer-copyright{
+  margin: 0;
+  justify-self: end;
   font-size: 14px;
   line-height: 26px;
 }

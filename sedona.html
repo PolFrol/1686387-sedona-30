@@ -30,17 +30,23 @@
   </header>
 
   <main class="container">
-
-    <h1>Sity of Sedona</h1>
-    <img src="https://via.placeholder.com/1200x509" alt="Большие горы">
-    <h2>Седона — небольшой городок в Аризоне,заслуживающий большего!</h2>
-    <p class="paragraph">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-
+    <div class="wrapper">
+      <h1>Sity of Sedona</h1>
+      <h2>Седона — небольшой городок в Аризоне,заслуживающий большего!</h2>
+      <p class="paragraph">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      <img src="https://via.placeholder.com/1200x509" alt="Большие горы">
+    </div>
     <section class="opportunities">
-      <img src="https://via.placeholder.com/800x256" alt="Отель">
-      <h3>Настоящий городок</h3>
-      <span>-№1-</span>
-      <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+      <div class="opportunities-wrapper">
+        <div class="opportunities-wrapper-text">
+          <h3>Настоящий городок</h3>
+          <span>-№1-</span>
+          <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+        </div>
+        <div class="opportunities-wrapper-photo">
+          <img src="https://via.placeholder.com/800x256" alt="Отель">
+        </div>
+      </div>
       <ul class="opportunities-list">
         <li class="opportunities-item">
           <h4>Жильё</h4>
@@ -58,10 +64,16 @@
     </section>
 
     <section class="features">
-      <h3>Там есть мост дьявола</h3>
-      <span>-№2-</span>
-      <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-      <img src="https://via.placeholder.com/800x256" alt="Маленькие горы">
+      <div class="features-wrapper">
+        <div class="features-wrapper-photo">
+          <img src="https://via.placeholder.com/800x256" alt="Маленькие горы">
+        </div>
+        <div class="features-wrapper-text">
+          <h3>Там есть мост дьявола</h3>
+          <span>-№2-</span>
+          <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+        </div>
+      </div>
       <ul class="features-list">
         <li class="features-item">
           <h3>Небольшая площадь</h3>
@@ -111,29 +123,31 @@
   </main>
 
   <footer class="main-footer">
-    <section class="footer-contacts">
-      <a class="footer-link" href="https://www.instagram.com/explore/tags/visitsedona/">#visitsedona</a><br>
-       тел: <a class="footer-phone"href="tel:+74956660166">+7(495)666-01-66</a>
-    </section>
+    <div class="container">
+      <section class="footer-contacts">
+        <a class="footer-link" href="https://www.instagram.com/explore/tags/visitsedona/">#visitsedona</a><br>
+        тел: <a class="footer-phone"href="tel:+74956660166">+7(495)666-01-66</a>
+      </section>
 
-    <section class="footer-social">
-      <ul>
-        <li>
-          <a class="social-button" href="#">Twitter</a>
-        </li>
-        <li>
-          <a class="social-button" href="#">Фейсбук</a>
-        </li>
-        <li>
-          <a class="social-button" href="#">Youtube</a>
-        </li>
-      </ul>
-    </section>
-    <p class="footer-copyright">
-      Website by:
-      <a href="https://htmlacademy.ru">HTML Academy</a>
-      <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy">
-    </p>
+      <section class="footer-social">
+        <ul>
+          <li>
+            <a class="social-button" href="#">Twitter</a>
+          </li>
+          <li>
+           <a class="social-button" href="#">Фейсбук</a>
+          </li>
+          <li>
+           <a class="social-button" href="#">Youtube</a>
+          </li>
+        </ul>
+      </section>
+      <p class="footer-copyright">
+        Website by:
+        <a href="https://htmlacademy.ru">HTML Academy</a>
+        <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy">
+      </p>
+    </div>
   </footer>
 
 </body>
