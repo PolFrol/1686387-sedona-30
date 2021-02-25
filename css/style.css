@@ -347,3 +347,19 @@ table{
   opacity: 0.3;
   text-decoration: underline;
 }
+ /* Grid catalog */
+.page-catalog {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: start;
+}
+h1 {
+  display: none;
+}
+.wrapper-check {
+  grid-column: 1 / -1;
+  margin-bottom: 30px;
+}
+.wrapper-sorting {
+  margin-bottom: 35px;
+}
