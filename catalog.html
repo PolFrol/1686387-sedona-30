@@ -18,15 +18,16 @@
 
   <header class="main-header">
     <nav class="main-navigation">
-      <a class="main-header-logo" href="index.html">
-        <img src="img/logo.svg" width="138" height="70" alt="Логотип Седона">
-      </a>
-      <ul class="site-navigation">
-        <li><a href="blank.html">Информация</a></li>
-        <li><a href="blank.html">Фото и видео</a></li>
-        <li><a href="blank.html">Карта штата</a></li>
-        <li><a href="catalog.html">Гостиницы</a></li>
-      </ul>
+      <div class="container">
+        <ul class="site-navigation">
+          <li><a href="blank.html">Информация</a></li>
+          <li><a href="blank.html">Фото и видео</a></li>
+          <li><a class="main-header-logo">
+            <img src="img/logo.svg" width="138" height="70" alt="Логотип Седона"></a></li>
+          <li><a href="blank.html">Карта штата</a></li>
+          <li><a href="catalog.html">Гостиницы</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
 
@@ -96,10 +97,10 @@
     </section>
     <section>
       <h2>Список гостиниц</h2>
-      <ul>
-        <li>
+      <ul class="catalog-list">
+        <li class="catalog-item">
           <a class="hotel" href="#">Amara Resort & Spa</a>
-          <p>
+          <p class="catalog-item-image">
             <img src="img/hotel.jpg" width="135" height="90" alt="Amara Resort & Spa"> Гостиница от 4000 Р.
           </p>
           <p>
@@ -108,9 +109,9 @@
           </p>
           <p class="rating">Рейтинг: 8,5</p>
         </li>
-        <li>
+        <li class="catalog-item">
           <a class="hotel" href="#">Desert Quail Inn</a>
-          <p>
+          <p class="catalog-item-image">
             <img src="img/motel.jpg" width="135" height="60" alt="Desert Quail Inn"> Мотель от 3000 Р.
           </p>
           <p>
@@ -119,9 +120,9 @@
           </p>
           <p class="rating">Рейтинг: 8,9</p>
         </li>
-        <li>
+        <li class="catalog-item">
           <a class="hotel" href="#">Villas at Poco Diablo</a>
-          <p>
+          <p class="catalog-item-image">
             <img src="img/apartments.jpg" width="135" height="60" alt="Villas at Poco Diablo"> Апартаменты от 2000 Р.
           </p>
           <p>
