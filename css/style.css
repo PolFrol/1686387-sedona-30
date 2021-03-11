@@ -79,6 +79,8 @@ p {
 }
 
 .main-header-logo {
+  position: absolute;
+  left: 50%;
   width: 138px;
   height: 70px;
 }
@@ -94,6 +96,7 @@ p {
 
 .site-navigation {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   list-style: none;
   margin: 0px;
@@ -103,10 +106,8 @@ p {
 ul {
   list-style: none;
 }
-.wrapper {
-  display: grid;
-  grid-template-columns: 100%;
-  margin-bottom: 50px;
+.main-photo {
+  background-image: url("img/background-photo.jpg");
 }
   /* Opportunities */
 .opportunities-wrapper {
@@ -346,6 +347,11 @@ ul {
 }
 .footer-copyright:focus path {
   fill: #BDBBBC;
+}
+.number {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
 }
   /* Catalog */
 .wrapper-sorting {
