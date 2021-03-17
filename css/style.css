@@ -11,6 +11,8 @@
   --basic-black-opacity: rgba(0, 0, 0, 0.3);
   --gray-disabled: #6A6A6A;
   --special: #766357;
+  --html-academy: #BDBBBC;
+  --shadow: rgba(0, 1, 1, 0.2);
   }
 
   /* Global */
@@ -29,7 +31,9 @@
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
 }
-
+.main-wrapper {
+  box-shadow: 0px 5px 15px var(--shadow);
+}
 a {
   text-decoration: none;
 }
@@ -60,6 +64,7 @@ p {
   font-size: 14px;
   line-height: 26px;
   margin-bottom: 50px;
+  text-align: center;
 }
 .main-navigation {
   display: flex;
@@ -137,13 +142,22 @@ ul {
   width: 1200px;
   height: 509px;
 }
-.shape {
+.welcome {
+  content: "";
+  position: relative;
+  transform:translate(371px, 77px);
+  background-image: url(../img/welcome-text.svg);
+  width: 457px;
+  height: 351px;
+  z-index: 2;
+}
+.main-photo::before {
   content: "";
   position: absolute;
   width: 100%;
   height: 57px;
   bottom: -1px;
-  background-image: url(../img/welcome-text.svg);
+  background-image: url(../img/Shape.svg);
   background-repeat: no-repeat;
   left: 0;
 }
@@ -156,16 +170,23 @@ ul {
   margin-bottom: 50px;
 }
 .opportunities-wrapper-photo {
+  width: 800px;
+  height: 256px;
   background-image: url("../img/image.jpg");
 }
 .opportunities-wrapper-text {
   text-align: center;
-  padding: 50px;
+  padding: 47px 50px;
   background-color: var(--basic-blue);
   color: var(--basic-white);
 }
 .opportunities-wrapper-text h3 {
   color: var(--basic-white);
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+.opportunities-wrapper-text p{
+  margin-top: 23px;
 }
 .opportunities-list {
   display: grid;
@@ -195,14 +216,24 @@ ul {
   margin: 0;
   padding: 0;
 }
+.opportunities-features-photo {
+  width: 800px;
+  height: 256px;
+  background-image: url("../img/image2.jpg");
+}
 .features-wrapper-text {
   text-align: center;
-  padding: 50px;
+  padding: 49px;
   background-color: var(--basic-blue);
   color: var(--basic-white);
 }
 .features-wrapper-text h3 {
   color: var(--basic-white);
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+.features-wrapper-text p {
+  margin-top: 23px;
 }
 .features-list {
   display: grid;
@@ -229,8 +260,8 @@ ul {
 .appointment-form {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   width: 570px;
-  justify-content: space-around;
 
 }
 .form {
@@ -238,7 +269,6 @@ ul {
   background: var(--basic-white);
   top: 100%;
   padding: 55px 0;
-
 }
 .form-shadow{
   position: relative;
@@ -255,24 +285,21 @@ ul {
   border: none;
   width: 460px;
   height: 60px;
+  margin-top: 25px;
+  margin-left: 55px;
 }
 .button:hover{
   background-color: #669EC0;
 }
 .button:focus{
   background-color: #5496BD;
-}
-.button:active {
-  background-color: var(--basic-blue);
-}
-
-.button:disabled {
-  cursor: default;
-  opacity: 0.5;
-  background-color: var(--basic-blue);
+  color: var(--basic-white-opacity);
 }
 .button-search {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-size: 21px;
   line-height: 26px;
   color: var(--basic-white);
@@ -288,35 +315,38 @@ ul {
 }
 .button-search:focus{
   background-color: #503E33;
-}
-.button-search:active {
-  background-color: var(--special);
+  color: var(--basic-white-opacity);
 }
 
 .appointment h2 {
   font-weight: 700;
   font-size: 30px;
   line-height: 24px;
+  margin-top: 58px;
+  margin-bottom: 0;
 }
 .appointment-info {
-  margin: 0;
-  margin-bottom: 25px;
+  margin:35px 0 45px 0;
   line-height: 24px;
   text-align: center;
   color: var(--basic-black);
 }
 .appointment-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-top: 0;
   margin-bottom: 30px;
   font-weight: 700;
 }
 .appointment-item input {
   font-size: 14px;
-  line-height: 18px;
+  line-height: 26px;
   padding-top: 6px;
-  padding-right: 200px;
+  padding-right: 178px;
   padding-bottom: 6px;
   padding-left: 13px;
+  margin-right: 55px;
   font-weight: 700;
   text-transform: uppercase;
   color: var(--basic-black);
@@ -324,17 +354,14 @@ ul {
   border: none;
 }
 .appointment-item label {
-
+  margin-left: 55px;
 }
 .appointment-item input:hover{
   background-color:#EBEBEB;
 }
 .appointment-item input:focus{
-  background: #FFFFFF;
+  background:var(--basic-white);
   border: 2px solid #E5E5E5;
-}
-.appointment-item input:active {
-  background-color: var(--basic-extra-light);
 }
 .calendar-button {
   position: absolute;
@@ -344,17 +371,65 @@ ul {
   padding-bottom: 8px;
   padding-right: 9px;
   height: 38px;
-  background-color: transparent;
-  color: var(--basic-grey);
+  color: var(--basic-neutral);
+  cursor: pointer;
+}
+.calendar-button:hover {
+  fill: var(--basic-black);
+}
+.calendar-button:focus {
+  fill: var(--basic-blue);
 }
 .appointment-item-age {
   display: flex;
-  margin-bottom: 0;
+  flex-wrap: wrap;
+}
+.appointment-item-column {
+  float: left;
+  width: 50%;
+}
+.label-adult {
+  padding-right: 40px;
+}
+.appointment-item-age input {
+  position: relative;
+  width: 36px;
+  text-align: center;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+.range-adult{
+  position: relative;
+  display: inline;
+}
+.button-minus{
+ position: absolute;
+ top: -3px;
+ left: 6px;
+ height: 100%;
+ border: none;
+ background: none;
+ z-index: 5;
+ cursor: pointer;
+}
+.button-plus {
+  position: absolute;
+  top: 1px;
+  right: 56px;
+  height: 100%;
+  border: none;
+  background: none;
+  z-index: 5;
+  cursor: pointer;
 }
 
-.appointment-item-age input {
-  padding: 6px 39px;
-  width: 36px;
+.button-minus:hover .btn__svg-icon,
+.button-plus:hover .btn__svg-icon {
+  fill: var(--basic-black);
+}
+.button-minus:focus .btn__svg-icon,
+.button-plus:focus .btn__svg-icon {
+  fill: var(--basic-blue);
 }
 .map {
   width: 1199px;
@@ -374,6 +449,11 @@ ul {
 .main-footer .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+}
+.footer-index {
+  margin-top: -120px;
+  background: rgba(255, 255, 255, 0.9);
+  z-index: 1;
 }
 .footer-contacts {
   display: flex;
@@ -441,7 +521,7 @@ ul {
   fill: var(--basic-blue);
 }
 .footer-copyright:focus path {
-  fill: #BDBBBC;
+  fill: var(--html-academy);
 }
 .number {
   font-weight: bold;
