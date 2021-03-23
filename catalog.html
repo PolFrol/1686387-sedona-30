@@ -6,7 +6,7 @@
   <title>Гостиницы</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/icon.svg" type="image/svg+xml">
@@ -32,8 +32,7 @@
 
   <main class=" page-catalog container">
     <h1 class="visually-hidden">Выбор гостиницы</h1>
-    <section>
-      <div class="wrapper">
+    <section class="wrapper">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <form class="wrapper-check" method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
@@ -93,15 +92,13 @@
                 <div class="scale">
                   <div class="bar"></div>
                 </div>
-                <div class="toggle toggle-min" tabindex="0"></div>
-                <div class="toggle toggle-max" tabindex="0"></div>
+                <div class="toggle toggle-min" title="Выбор минимальной цены" tabindex="0"></div>
+                <div class="toggle toggle-max" title="Выбор максимальной цены" tabindex="0"></div>
               </div>
             </div>
             <button class="show" type="submit">Показать</button>
-
           </fieldset>
         </form>
-      </div>
     </section>
 
     <section class="wrapper-sorting">
@@ -247,10 +244,9 @@
   </main>
 
   <footer class="main-footer">
-    <div class="container">
       <section class="footer-contacts">
         <a class="footer-link" href="https://www.instagram.com/explore/tags/visitsedona/">#visitsedona</a>
-        <p class="contacts-tel"> Тел: <a class="footer-phone" href="tel:+74956660166"> +7(495) 666-01-66</a></p>
+        <p class="contacts-tel">Тел: <a class="footer-phone" href="tel:+74956660166">+7(495) 666-01-66</a></p>
       </section>
 
       <section class="footer-social">
@@ -286,7 +282,6 @@
           </svg>
         </a>
       </section>
-    </div>
   </footer>
 </body>
 
